@@ -1,0 +1,34 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Chase Reidinger
+  description: Basic packages for Debian/Ubuntu
+  company: "AdepDev, LLC"
+  
+  license: license (GPLv2, CC-BY, etc)
+  
+  min_ansible_version: 2.4
+
+  # Optionally specify the branch Galaxy will use when accessing the GitHub
+  # repo for this role. During role install, if no tags are available,
+  # Galaxy will use this branch. During import Galaxy will access files on
+  # this branch. If Travis integration is configured, only notifications for this
+  # branch will be accepted. Otherwise, in all cases, the repo's default branch
+  # (usually master) will be used.
+  #github_branch:
+
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+
+  galaxy_tags:
+    - development
+    - web
+    - server
+    - ubuntu
+    - debian
