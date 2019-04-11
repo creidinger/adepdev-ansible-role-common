@@ -5,9 +5,7 @@ galaxy_info:
   author: Chase Reidinger
   description: Basic packages for Debian/Ubuntu
   company: "AdepDev, LLC"
-  
-  license: license (GPLv2, CC-BY, etc)
-  
+  license: license (MIT)
   min_ansible_version: 2.4
 
   # Optionally specify the branch Galaxy will use when accessing the GitHub
