@@ -5,7 +5,7 @@
 # Many are listed because it's unclear what will be installed with vagrant
 #
 - name: Install system packages
-  apt:
+  package:
     name: "{{ item }}"
     state: latest
     update_cache: yes
