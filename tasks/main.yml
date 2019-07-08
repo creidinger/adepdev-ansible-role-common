@@ -18,11 +18,18 @@
     - git
     - git-lfs
     - zip
+    - python3-apt
     - python3
 
-- name: Run Debian / Ubuntu specific install options
-  include:  debian.yml
-  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+- name: Install python(3)-pip
+  package:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - python3-pip
+    - python-pip
+  # ignoreing because this fails to update cache every time.
+  ignore_errors: yes
 
 - name: Set Timezone to America/New_York
   timezone:
