@@ -28,8 +28,6 @@
   loop:
     - python3-pip
     - python-pip
-  # ignoreing because this fails to update cache every time.
-  ignore_errors: yes
 
 - name: Set Timezone to America/New_York
   timezone:
