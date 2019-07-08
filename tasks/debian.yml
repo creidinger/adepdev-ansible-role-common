@@ -1,0 +1,8 @@
+---
+# ubuntu specific commands
+
+- name: Install Python3-pip
+  command: sudo apt install python3-pip
+
+- name: Install Python-pip
+  command: sudo apt install python-pip
