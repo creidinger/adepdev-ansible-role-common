@@ -26,9 +26,6 @@
     - python-pip
     - python-pymysql
 
-- name: Install MYSQL pip dependancies
-  command: pip3 install pymysql
-
 - name: Set Timezone to America/New_York
   timezone:
     name: America/New_York
